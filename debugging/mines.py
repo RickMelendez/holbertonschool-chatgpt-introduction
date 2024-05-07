@@ -73,7 +73,7 @@ class Minesweeper:
                     break
                 if self.check_win():
                     self.print_board(reveal=True)
-                    print("Congratulations! You won!")
+                    print("Congratulations! You've won the game")
                     break
             except ValueError as e:
                 print(e)
