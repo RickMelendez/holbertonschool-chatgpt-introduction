@@ -32,6 +32,8 @@ def tic_tac_toe():
                 raise ValueError("Row and column values must be between 0 and 2 inclusive.")
             if board[row][col] == " ":
                 board[row][col] = player
+                if check_winner(board):
+                    break
                 if player == "X":
                     player = "O"
                 else:
